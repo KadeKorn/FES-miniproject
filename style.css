@@ -1,10 +1,115 @@
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-.middle{
-    display: flex;
-    flex-direction: row;
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #cafdff;
 }
-figure{
-    width: 50%;
+header {
+  background-color: #eadcff;
+  height: calc(100vh-70vh);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subheader {
+  font-size: 36px;
+  margin: 16px 0 24px 0;
+}
+button {
+  background-color: #05c7cf;
+  color: white;
+  padding: 8px 16px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+.logo {
+  width: 300px;
+}
+a {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  padding-left: 16px;
+}
+.row {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+
+About
+
+*/
+
+#About {
+  padding: 48px 0;
+  background-color: #f8ffdc;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.section__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.About__img--wrapper {
+  width: 40%;
+}
+img {
+  width: 100%;
+}
+.section__description--wrapper {
+  width: 60%;
+}
+.About__img--wrapper,
+.section__description--wrapper {
+  width: 40%;
+  padding: 0 24px;
+}
+.section_description--para {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+#About,
+#Contact,
+#Discord{
+    padding: 48px 0;
+}
+
+/* 
+
+About
+
+*/
+
+#Discord {
+  background-color: #cafdff;
 }

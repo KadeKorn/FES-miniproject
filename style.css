@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+}
+figure{
+    width: 50%;
+}

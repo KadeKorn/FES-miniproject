@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "MINI-Project",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MINI-Project"
+	}
+}

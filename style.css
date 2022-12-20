@@ -32,9 +32,10 @@ button {
   font-size: 24px;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 .logo {
-  width: 300px;
+  max-width: 480px;
 }
 a {
   color: black;
@@ -89,18 +90,19 @@ img {
 }
 .About__img--wrapper,
 .section__description--wrapper {
-  width: 40%;
+  width: 60%;
   padding: 0 24px;
 }
-.section_description--para {
-  font-size: 20px;
+.section__description--para {
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 24px;
 }
 
 #About,
 #Contact,
-#Discord{
+#Discord
+#footer{
     padding: 48px 0;
 }
 
@@ -110,6 +112,56 @@ About
 
 */
 
+
 #Discord {
   background-color: #cafdff;
+}
+
+/* 
+
+Contact
+
+*/
+
+#Contact{
+    background-color:#eadcff ;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+input, textarea{
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/* 
+
+Footer
+
+*/
+
+footer{
+    background-color: #cafdff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__links{
+   margin-bottom: 32ex; 
+}
+.footer__logo{
+  max-width: 480px;
+  margin: 16px 0;
+}
+.footer__links{
+    margin-bottom: 32px;
+} 
+
+.footer__link   {
+    padding: 0 16px;
 }

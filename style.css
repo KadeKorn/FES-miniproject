@@ -101,9 +101,8 @@ img {
 
 #About,
 #Contact,
-#Discord
-#footer{
-    padding: 48px 0;
+#Discord #footer {
+  padding: 48px 0;
 }
 
 /* 
@@ -111,7 +110,6 @@ img {
 About
 
 */
-
 
 #Discord {
   background-color: #cafdff;
@@ -123,20 +121,22 @@ Contact
 
 */
 
-#Contact{
-    background-color:#eadcff ;
+#Contact {
+  background-color: #eadcff;
 }
 form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-input, textarea{
-    margin-bottom: 24px;
-    font-size: 20px;
-    padding: 6px 12px;
+input,
+textarea {
+  margin-bottom: 24px;
+  font-size: 20px;
+  padding: 6px 12px;
 }
 
 /* 
@@ -145,23 +145,75 @@ Footer
 
 */
 
-footer{
-    background-color: #cafdff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer {
+  background-color: #cafdff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.footer__links{
-   margin-bottom: 32ex; 
+.footer__links {
+  margin-bottom: 32ex;
 }
-.footer__logo{
+.footer__logo {
   max-width: 480px;
   margin: 16px 0;
 }
-.footer__links{
-    margin-bottom: 32px;
-} 
-
-.footer__link   {
-    padding: 0 16px;
+.footer__links {
+  margin-bottom: 32px;
 }
+
+.footer__link {
+  padding: 0 16px;
+}
+/* Small phone, Tablets, large phones */
+@media (max-width: 728px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .home__description {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  .subheader {
+    text-align: center;
+    font-size: 28px;
+  }
+  ul{
+    display: none;
+  }
+  .section__description{
+    flex-direction: column;
+  }
+  .section__description--wrapper{
+    width: 100%;
+  }
+  .About__img--wrapper{
+    width: 100%;
+    padding-top: 15px;
+  }
+  #discord .section__description{
+    flex-direction: column-reverse;
+  }
+  footer{
+    padding: 48px 24px;
+  }
+  .footer__logo{
+    max-width: 360px;
+  }
+  .footer__link{
+    padding: 0 4px;
+    font-size: 18px;
+  }
+  .footer__links{
+    margin-bottom: 24px;
+  }
+}
+
